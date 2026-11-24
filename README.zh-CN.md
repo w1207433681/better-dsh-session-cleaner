@@ -1,4 +1,4 @@
-# better-dsh-session-cleaner 开源版
+# better-dsh-session-cleaner
 
 一个 DSH 会话删除插件：在会话菜单里真正删除会话，确认框按家族树展示子智能体和派生对话，并可勾选工作产物目录一起删除。
 

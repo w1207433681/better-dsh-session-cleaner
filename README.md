@@ -1,4 +1,4 @@
-# better-dsh-session-cleaner 开源版
+# better-dsh-session-cleaner
 
 [English](README.en.md) ｜ [简体中文](README.md)
 
