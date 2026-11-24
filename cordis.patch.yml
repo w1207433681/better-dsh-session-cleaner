@@ -1,0 +1,4 @@
+# Inserts this plugin's Host row into the profile's layer stack.
+- insert:
+    - id: better-dsh-session-cleaner
+      name: 'better-dsh-session-cleaner'
