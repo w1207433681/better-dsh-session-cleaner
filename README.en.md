@@ -43,6 +43,8 @@ For each new session:
 
     powershell -NoProfile -ExecutionPolicy Bypass -File .dsh\session-workspace.ps1 -Name "topic"
 
+The marked AGENTS.md block is intentionally compact: a start marker, one rule line, and an end marker. Binding detection only checks for the marker, so shortening the block keeps every workspace bound. A full single-paragraph template is in `docs/AGENTS.template.md` (~50% fewer injected tokens per session).
+
 ## Development
 
     npm run check

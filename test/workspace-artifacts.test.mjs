@@ -90,3 +90,12 @@ test('workspaceBindingIsComplete requires all three files and the marker', () =>
   assert.equal(workspaceBindingIsComplete({ ...complete, agentsText: '# rules only' }), false)
   assert.equal(workspaceBindingIsComplete({ ...complete, agentsText: null }), false)
 })
+
+test('a compact marker-only binding block still counts as bound', () => {
+  const compact = [WORKSPACE_BINDING_MARKER, '<!-- /better-dsh-session-cleaner:workspace-binding -->'].join('\n')
+  assert.equal(workspaceBindingIsComplete({
+    initializerText: '# init',
+    manifestText: '{}',
+    agentsText: compact,
+  }), true)
+})

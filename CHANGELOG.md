@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.9.3
+
+- Compressed the AGENTS.md workspace-binding block from ten lines to a marker plus one rule line; binding detection only checks the marker, so the shorter block keeps every workspace still bound.
+- Rewrote the AGENTS.md template as a compact single-paragraph rule set (~50% fewer injected tokens per session).
+- Added a regression test proving an empty/marker-only binding block still satisfies `workspaceBindingIsComplete`.
+
 ## 0.9.2
 
 - Added a one-click workspace binding icon beside the workspace header controls, matching the surrounding header icons and using the current session from the workspace controller.

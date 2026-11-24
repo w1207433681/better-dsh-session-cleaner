@@ -49,7 +49,7 @@ Host 侧改动需要完全重启 DSH。
 
 1. 复制初始化脚本到 .dsh\session-workspace.ps1。
 2. 创建 sessions\session-artifacts.json。
-3. 在 AGENTS.md 追加带标记的规则块；已有 AGENTS.md 不会被覆盖。
+3. 在 AGENTS.md 追加带标记的规则块；已有 AGENTS.md 不会被覆盖。规则块是压缩版：起止标记 + 一行命令。绑定判定只检查标记是否存在，所以缩短内容不会让已绑定工作区掉状态。完整规则模板见 docs/AGENTS.template.md（单段式，每会话注入 token 约省一半）。
 
 之后每个从该工作区根目录启动的新会话，先运行：
 
